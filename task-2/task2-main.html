@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="../task-2/task2.js"></script>
+    <script src="task2.js"></script>
 </head>
 <body>
 <!--Câu 2: Xây dựng hàm trả về vị trí của phần tử cần tìm trong một mảng cho trước -->
@@ -12,14 +12,13 @@
 <!--Viết chương trình với một mảng số nguyên được khởi tạo trước.-->
 <!--Nhập vào một giá trị bất kỳ, sau đó kiểm tra xem giá trị số nguyên bất kỳ vừa nhập có nằm trong mảng đã nhập hay không.-->
 <script>
-    let input = prompt("Hãy nhập một giá trị bất kỳ");
+    let input = +prompt("Hãy nhập một giá trị bất kỳ");
     let array = [1,7,-9,0,44,78,2,9,10,23,66,70];
     let place = findElement(input,array);
     if (place.length==0)
         document.write(input + " is not in this array");
     else
         document.write(input + " is at place " + place);
-
 </script>
 </body>
 </html>
